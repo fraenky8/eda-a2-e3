@@ -1,0 +1,25 @@
+body {
+    overflow-y: scroll;
+}
+
+select {
+    width: 250px;
+}
+
+.input-group span:first-child {
+    width: 200px !important;
+}
+
+#exchanges, #stocks-quotes {
+    height: 180px;
+}
+
+#client-subscriptions, #client-notifications {
+    width: 500px;
+    height: 260px;
+}
+
+.panel-heading  {
+    cursor: pointer;
+    font-weight: bold;
+}

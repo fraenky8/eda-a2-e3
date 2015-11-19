@@ -1,0 +1,46 @@
+extends layout
+
+block content
+
+    br
+    div.panel.panel-primary
+        div.panel-heading Publish-Subscribe & Filter
+        div
+            div.row.panel-body
+
+                div.col-md-3
+                    h3 Exchanges
+                    select#exchanges(size=5, multiple=true)
+
+                div.col-md-3
+                    h3 Stock Quotes
+                    select#stocks-quotes(size=8, multiple=true)
+
+                div.col-md-6
+                    br
+                    br
+                    br
+                    div#filter
+
+            div.row.panel-body
+
+                div.col-md-6
+                    button#reset-filter-btn.btn.btn-primary Reset Filter
+
+                div.col-md-6
+                    button#subscribe-btn.btn.btn-primary Subscribe
+
+    div.panel.panel-primary
+        div.panel-heading Information
+        div
+            div.row.panel-body
+
+                div.col-md-6
+                    h3 Client Subscriptions
+                    select#client-subscriptions(size=16)
+                    button#cancel-subscription-btn.btn.btn-primary Cancel Subscription
+
+                div.col-md-6
+                    h3 Client Notifications
+                    select#client-notifications(size=16)
+                    button#clear-notifications-btn.btn.btn-primary Clear Notifications

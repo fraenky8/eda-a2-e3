@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirect</title>
+</head>
+<body>
+    <p>
+        redirecting to <span id="url"></span>
+    </p>
+</body>
+<script language="JavaScript">
+     var newUrl = window.location.protocol + "//" + window.location.hostname + ":3000";
+     document.getElementById('url').innerHTML = '<a href="' + newUrl + '">' + newUrl + '</a>';
+     window.location.href = newUrl;
+</script>
+</html>
