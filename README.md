@@ -1,4 +1,6 @@
-### Event-Driven Architectures - Assignment 2
+### Event-Driven Architectures
+
+#### Assignment 2
 > Tutorial in Winter Semester 2015/16 at University Rostock, Fakultät für Informatik und Elektrotechnik, Institut für Informatik, Lehrstuhl  Architektur von Anwendungssystemen (AVA)
 
 Date:  November 2015 
