@@ -46,7 +46,7 @@ var ExchangesManager = function ($, io, window, document, undefined)
 
         $unsubsribeBtn.on('click', unsubscribe);
 
-        $clearNotificationsBtn.on('click', clearNotifications)
+        $clearNotificationsBtn.on('click', clearNotifications);
 
         $resetFilterBtn.on('click', resetFilter);
 
@@ -240,6 +240,9 @@ var ExchangesManager = function ($, io, window, document, undefined)
     var unsubscribe = function unsubscribe()
     {
         var $option = $clientSubscriptionsInformation.find('option:selected');
+
+        if ($option.length == 0) return;
+
         var $subcription = $option.data('subscription');
 
         io.emit('unsubscribe', $subcription);
