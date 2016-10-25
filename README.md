@@ -13,6 +13,15 @@ Implement a Message Broker offering a publish/subscribe interface to its clients
   4. Implement the Message Broker using the programming language(s) and framework(s) of your choice!
   5. Implement a distributed stock quote dissemination application consisting of multiple publishers and subscribers to test your message broker and demonstrate its features! Please ensure that subscribers exploit the expressiveness granted by your data and filter model!
 
+#### Getting started
+
+```
+yarn install
+npm start
+```
+
+go to localhost:3000 with browser and play around!
+
 #### TODO
   * migrate to ES6
   * migrate to new socket.io version
